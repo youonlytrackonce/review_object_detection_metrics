@@ -71,7 +71,7 @@ class Details_Dialog(QMainWindow, Details_UI):
         # get first image file and show it
         if os.path.isdir(self.dir_images):
             self.image_files = get_files_dir(
-                self.dir_images, extensions=['jpg', 'jpge', 'png', 'bmp', 'tiff', 'tif'])
+                self.dir_images, extensions=['jpg', 'jpge', 'PNG', 'png', 'bmp', 'tiff', 'tif'])
             if len(self.image_files) > 0:
                 self.selected_image_index = 0
             else:

@@ -98,7 +98,7 @@ class Main_Dialog(QMainWindow, Main_UI):
             valid_image_dir = False
             if self.dir_images_gt is not None and os.path.isdir(self.dir_images_gt):
                 found_image_files = general_utils.get_files_dir(
-                    self.dir_images_gt, extensions=['jpg', 'jpge', 'png', 'bmp', 'tiff', 'tif'])
+                    self.dir_images_gt, extensions=['jpg', 'jpge', 'PNG','png', 'bmp', 'tiff', 'tif'])
                 if len(found_image_files) != 0:
                     valid_image_dir = True
             if valid_image_dir is False:
